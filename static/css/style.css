@@ -1,4 +1,87 @@
-h1{
-color: red;
+*{
+margin: 0;
+padding: 0;
 }
 
+html, body{
+height: 100%;
+}
+
+/* MAIN MENU */
+
+/* height of a header */
+.header{
+    height: 140px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+/* place of main menu (from the left) */
+.main_menu{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+
+}
+
+.main_menu a{
+    text-decoration: none; /* removing the line under the words */
+    color: darksladegray;
+    font-weight: 400;
+
+}
+
+.main_menu li{
+    list-style: none; /* removing points before the words */
+    margin-right: 10px; /* making a space between the words */
+    width: 100px;
+    margin-top: 5%;  /* space from the top */
+    box-shadow: 15px 15px 15px gray; /* adding 3D buttons */
+    font-family: monospace;
+    border-radius: 100px; /* removing sharp corners from the buttons */
+    text-align: center; /* put the words on the center of the buttons */
+
+}
+
+/* making an animation of the buttons */
+.main_menu li:hover /* hover - when we point at the button */{
+    transition-duration: 1s; /* how long */
+    box-shadow: 30px 10px 50px grey; /* settings of the animation */
+}
+
+.main_menu p{
+    font-size: 10px;
+}
+
+
+/* WRAPPER */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    outline: 1px red;
+    height: 100%;
+
+}
+
+/* CONTENT */
+.content{
+    width: 60%;
+    margin: 100px auto 0;
+    flex: 1 0 auto;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: antiquewhite;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* on the center from the right and left*/
+    align-items: center; /* on the center from the top*/
+    font-family: monospace;
+    text-align: center;
+    font-size: 10px;
+
+}

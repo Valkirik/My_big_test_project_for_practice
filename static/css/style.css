@@ -7,6 +7,14 @@ html, body{
 height: 100%;
 }
 
+/* LOGO */
+
+.logo img{
+    float: left; /* the image's location from the left */
+    margin-left: 50px;
+    width: 140px; /* the size */
+}
+
 /* MAIN MENU */
 
 /* height of a header */
@@ -69,6 +77,33 @@ height: 100%;
     flex: 1 0 auto;
 }
 
+/* MAIN PAGE */
+
+.info{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    outline: 1px green solid;
+    box-shadow: -5px 15px 10px skyblue;
+    align-items: center;
+    border: radius: 200px;
+    font-family: monospace;
+    margin-top: 80px;
+
+}
+
+.description{
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.names{
+    box-shadow: -5px 15px 10px skyblue;
+    border-radius: 200px; /* округление */
+    padding: 10px 20px; /* позволяет делать округления чтобы буква не вылазила за края */
+    letter-spacing: 3px;
+}
 
 /* FOOTER */
 
